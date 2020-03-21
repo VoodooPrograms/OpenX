@@ -18,10 +18,10 @@ class TestNode(unittest.TestCase):
         self.n1.right.right.right.right = Node(5)
 
     def test_sum(self):
-        pass
+        self.assertEqual(Tree.sum(self.n1), 38)
 
     def test_avg(self):
-        pass
+        self.assertEqual(Tree.avg(self.n1), 3.8)
 
     def test_mediana(self):
-        pass
+        self.assertEqual(Tree.mediana(self.n1), 4)
